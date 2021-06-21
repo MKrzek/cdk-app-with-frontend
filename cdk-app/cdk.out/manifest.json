@@ -1,0 +1,714 @@
+{
+  "version": "11.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CdkAppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkAppStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CdkAppStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24baf",
+              "id": "9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24baf",
+              "packaging": "zip",
+              "sourceHash": "9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24baf",
+              "s3BucketParameter": "AssetParameters9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24bafS3BucketADBA9507",
+              "s3KeyParameter": "AssetParameters9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24bafS3VersionKey2B99940D",
+              "artifactHashParameter": "AssetParameters9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24bafArtifactHashC04869A3"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/construct-compat.ts:451:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkAppStack.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new ToDoBackend (/Users/malgorzatakrzek/cdk-app/lib/todo-backend.ts:16:24)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:17:25)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/ToDoBackend/TodoDatabase/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ToDoBackendTodoDatabase268AF11E",
+            "trace": [
+              "new Table (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:677:18)",
+              "new ToDoBackend (/Users/malgorzatakrzek/cdk-app/lib/todo-backend.ts:12:28)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:17:25)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/ToDoBackend/TodoHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ToDoBackendTodoHandlerServiceRoleA883E766",
+            "trace": [
+              "new Role (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-iam/lib/role.ts:192:18)",
+              "new Function (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:307:31)",
+              "new ToDoBackend (/Users/malgorzatakrzek/cdk-app/lib/todo-backend.ts:16:24)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:17:25)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/ToDoBackend/TodoHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ToDoBackendTodoHandlerServiceRoleDefaultPolicy18C513E2",
+            "trace": [
+              "new Policy (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-iam/lib/role.ts:229:28)",
+              "Function.addToPrincipal (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Table.combinedGrant (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:521:29)",
+              "Table.grantReadWriteData (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:348:17)",
+              "new ToDoBackend (/Users/malgorzatakrzek/cdk-app/lib/todo-backend.ts:24:20)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:17:25)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/ToDoBackend/TodoHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ToDoBackendTodoHandler71E168A4",
+            "trace": [
+              "new Function (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:369:35)",
+              "new ToDoBackend (/Users/malgorzatakrzek/cdk-app/lib/todo-backend.ts:16:24)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:17:25)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/AssetParameters/9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24baf/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24bafS3BucketADBA9507",
+            "trace": [
+              "new FileAssetParameters (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkAppStack.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new ToDoBackend (/Users/malgorzatakrzek/cdk-app/lib/todo-backend.ts:16:24)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:17:25)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/AssetParameters/9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24baf/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24bafS3VersionKey2B99940D",
+            "trace": [
+              "new FileAssetParameters (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkAppStack.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new ToDoBackend (/Users/malgorzatakrzek/cdk-app/lib/todo-backend.ts:16:24)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:17:25)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/AssetParameters/9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24baf/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters9ad29d603107512149529e9f83ddb7328736578094cc3304fcd6281b07e24bafArtifactHashC04869A3",
+            "trace": [
+              "new FileAssetParameters (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "CdkAppStack.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
+              "new Function (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:327:29)",
+              "new ToDoBackend (/Users/malgorzatakrzek/cdk-app/lib/todo-backend.ts:16:24)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:17:25)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F",
+            "trace": [
+              "new RestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:460:22)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointCloudWatchRoleC3C64E0F",
+            "trace": [
+              "new Role (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-iam/lib/role.ts:192:18)",
+              "LambdaRestApi._configureCloudWatchRole (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:286:18)",
+              "new RestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:477:12)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointAccountB8304247",
+            "trace": [
+              "LambdaRestApi._configureCloudWatchRole (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:291:22)",
+              "new RestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:477:12)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeployment318525DAf19b2433816fc1fe17cf8446c3e4719f",
+            "trace": [
+              "new Deployment (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:34:21)",
+              "LambdaRestApi._configureDeployment (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:315:32)",
+              "new RestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:480:10)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeploymentStageprodB78BEEA0",
+            "trace": [
+              "new Stage (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:136:22)",
+              "LambdaRestApi._configureDeployment (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:325:30)",
+              "new RestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:480:10)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpoint8024A810",
+            "trace": [
+              "LambdaRestApi._configureDeployment (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:330:7)",
+              "new RestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:480:10)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpointproxy39E2174E",
+            "trace": [
+              "new Resource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
+              "new ProxyResource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:397:5)",
+              "RootResource.addProxy (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.CdkAppStackEndpoint1AD78947.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionCdkAppStackEndpoint1AD78947ANYproxy51D04F69",
+            "trace": [
+              "Function.addPermission (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "ProxyResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:419:18)",
+              "new ProxyResource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.CdkAppStackEndpoint1AD78947.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTestCdkAppStackEndpoint1AD78947ANYproxy4802EAF7",
+            "trace": [
+              "Function.addPermission (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "ProxyResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:419:18)",
+              "new ProxyResource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYC09721C5",
+            "trace": [
+              "new Method (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "ProxyResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:419:18)",
+              "new ProxyResource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Default/ANY/ApiPermission.CdkAppStackEndpoint1AD78947.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionCdkAppStackEndpoint1AD78947ANYDDEECC4D",
+            "trace": [
+              "Function.addPermission (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "RootResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:416:29)",
+              "new ProxyResource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Default/ANY/ApiPermission.Test.CdkAppStackEndpoint1AD78947.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTestCdkAppStackEndpoint1AD78947ANY24949080",
+            "trace": [
+              "Function.addPermission (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "RootResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:416:29)",
+              "new ProxyResource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/Endpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANY485C938B",
+            "trace": [
+              "new Method (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "RootResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:416:29)",
+              "new ProxyResource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new CdkAppStack (/Users/malgorzatakrzek/cdk-app/lib/cdk-app-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/bin/cdk-app.ts:6:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Module.m._compile (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "main (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1158:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)",
+              "Module.load (internal/modules/cjs/loader.js:1002:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:901:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12)",
+              "internal/main/run_main_module.js:18:47"
+            ]
+          }
+        ],
+        "/CdkAppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:418:26)",
+              "process.emit (events.js:311:20)",
+              "process.EventEmitter.emit (domain.js:482:12)",
+              "process.emit (/Users/malgorzatakrzek/cdk-app/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ],
+        "/CdkAppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:202:5)",
+              "visit (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:198:5)",
+              "injectMetadataResources (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/malgorzatakrzek/cdk-app/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:418:26)",
+              "process.emit (events.js:311:20)",
+              "process.EventEmitter.emit (domain.js:482:12)",
+              "process.emit (/Users/malgorzatakrzek/cdk-app/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:137:15)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CdkAppStack"
+    }
+  }
+}
