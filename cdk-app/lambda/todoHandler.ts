@@ -10,7 +10,10 @@ const createResponse = (
     statusCode = 200
 ) => ({
     statusCode,
-
+    headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "OPTIONS,GET,POST,DELETE"
+    },
     body: JSON.stringify(body, null, 2)
 })
 const getAllTodos = async () =>
@@ -50,6 +53,10 @@ const deleteTodoItem = async (data: { id: string }) => {
 exports.handler = async function (event: AWSLambda.APIGatewayEvent) {
     try {
         const { httpMethod, body: requestBody } = event
+
+        if (httpMethod === "OPTIONS") {
+            return createResponse('ok')
+        }
         if (httpMethod === "GET") {
             const response = await getAllTodos();
             return createResponse(response?.Items ?? []);
