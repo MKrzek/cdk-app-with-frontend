@@ -162,7 +162,7 @@ const App = () => {
             ) : (
                 <TodoList todos={todos} deleteTodo={deleteTodo} />
             )}
-            <Logo src="" alt="Egghead logo" />
+            <Logo src="http://cdkappstack-logobucketeb73fe35-nelods0yyb8c.s3.amazonaws.com/logo192.png" alt="Egghead logo" />
         </Wrapper>
     );
 };
