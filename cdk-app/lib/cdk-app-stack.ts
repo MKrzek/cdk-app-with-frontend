@@ -31,18 +31,36 @@ export class CdkAppStack extends cdk.Stack {
       handler: toDoBackend.handler
     })
 
-    // const logoBucket = new s3.Bucket(this, 'LogoBucket', {
-    //   publicReadAccess: true
-    // });
+    const logoBucket = new s3.Bucket(this, 'LogoBucket', {
+      publicReadAccess: true
+    });
 
     // logoBucket.addEventNotification(
     //   s3.EventType.OBJECT_CREATED,
     //   new s3Notifications.LambdaDestination(helloLambda)
     // );
 
-    // new s3Deployment.BucketDeployment(this, "DeployLogo", {
-    //   destinationBucket: logoBucket,
-    //   sources: [s3Deployment.Source.asset("./assets")]
-    // })
+    new s3Deployment.BucketDeployment(this, "DeployLogo", {
+      destinationBucket: logoBucket,
+      sources: [s3Deployment.Source.asset("./assets")]
+    })
+    new cdk.CfnOutput(this, 'LogoPath', {
+      value: `http://${logoBucket.bucketDomainName}/logo192.png`
+    })
+
+    const websiteBucket = new s3.Bucket(this, 'WebsiteBucket', {
+      publicReadAccess: true,
+      websiteIndexDocument: "index.html"
+    })
+
+    new s3Deployment.BucketDeployment(this, "DeployWebsite", {
+      destinationBucket: websiteBucket,
+      sources: [s3Deployment.Source.asset('../frontend/build')]
+    })
+
+    new cdk.CfnOutput(this, "WebsiteAddress", {
+      value: websiteBucket.bucketWebsiteUrl
+    })
+
   }
 }
