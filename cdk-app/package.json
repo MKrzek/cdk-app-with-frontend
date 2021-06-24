@@ -21,17 +21,18 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.107.0",
-    "@aws-cdk/aws-dynamodb": "^1.108.0",
-    "@aws-cdk/aws-lambda": "^1.107.0",
-    "@aws-cdk/aws-s3": "^1.107.0",
-    "@aws-cdk/aws-s3-deployment": "^1.108.0",
-    "@aws-cdk/aws-s3-notifications": "^1.108.0",
+    "@aws-cdk/aws-apigateway": "1.107.0",
+    "@aws-cdk/aws-dynamodb": "1.107.0",
+    "@aws-cdk/aws-lambda": "1.107.0",
+    "@aws-cdk/aws-s3": "1.107.0",
+    "@aws-cdk/aws-s3-deployment": "1.107.0",
+    "@aws-cdk/aws-s3-notifications": "1.107.0",
     "@aws-cdk/aws-sns": "1.107.0",
     "@aws-cdk/aws-sns-subscriptions": "1.107.0",
     "@aws-cdk/aws-sqs": "1.107.0",
     "@aws-cdk/core": "1.107.0",
-    "@types/aws-lambda": "^8.10.77",
-    "aws-sdk": "^2.926.0"
+    "@types/aws-lambda": "8.10.77",
+    "aws-sdk": "2.926.0",
+    "cdk-spa-deploy": "1.103.1"
   }
 }
