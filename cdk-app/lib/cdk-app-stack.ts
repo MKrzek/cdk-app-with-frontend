@@ -5,6 +5,7 @@ import * as s3 from "@aws-cdk/aws-s3";
 
 import * as s3Deployment from "@aws-cdk/aws-s3-deployment";
 import { ToDoBackend } from "./todo-backend";
+import { SPADeploy } from "cdk-spa-deploy"
 
 
 
@@ -48,18 +49,23 @@ export class CdkAppStack extends cdk.Stack {
       value: `http://${logoBucket.bucketDomainName}/logo192.png`
     })
 
-    const websiteBucket = new s3.Bucket(this, 'WebsiteBucket', {
-      publicReadAccess: true,
-      websiteIndexDocument: "index.html"
-    })
+    // const websiteBucket = new s3.Bucket(this, 'WebsiteBucket', {
+    //   publicReadAccess: true,
+    //   websiteIndexDocument: "index.html"
+    // })
 
-    new s3Deployment.BucketDeployment(this, "DeployWebsite", {
-      destinationBucket: websiteBucket,
-      sources: [s3Deployment.Source.asset('../frontend/build')]
-    })
+    // new s3Deployment.BucketDeployment(this, "DeployWebsite", {
+    //   destinationBucket: websiteBucket,
+    //   sources: [s3Deployment.Source.asset('../frontend/build')]
+    // })
 
-    new cdk.CfnOutput(this, "WebsiteAddress", {
-      value: websiteBucket.bucketWebsiteUrl
+    // new cdk.CfnOutput(this, "WebsiteAddress", {
+    //   value: websiteBucket.bucketWebsiteUrl
+    // })
+
+    new SPADeploy(this, 'WebsiteDeploy').createSiteWithCloudfront({
+      indexDoc: 'index.html',
+      websiteFolder: "../frontend/build"
     })
 
   }
